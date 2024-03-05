@@ -58,7 +58,7 @@ main {
     margin-top: 20px;
 }
 
-.size-buttons > a {
+.size-buttons a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color */
 }
@@ -83,14 +83,16 @@ footer {
     background-color: #ffffff;
     padding: 20px 0;
     display: flex;
-    justify-content: center; /* Center align horizontally */
+    justify-content: center; /* Space elements evenly */
 }
 
 footer p {
     font-size: 12px;
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color */
-    cursor: default; /* Set cursor to default */
+    margin-right: 10px;
+}
+
+.footer-text {
+    margin-left: 20px; /* Adjust the margin as needed */
 }
 
 /* Media query for mobile devices */
