@@ -1,0 +1,111 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* white background */
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+header {
+    background-color: #ffffff;
+    height: 300px; /* Set the desired height */
+    width: 100%; /* Set a fixed width */
+    padding: 0px;
+    margin: -150px 0 0; /* Reset margin */
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+}
+
+.logo img {
+    width: 80%; /* Set the logo width as a percentage of the header width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    flex-grow: 1;
+    padding: 0px; /* Add padding for better spacing on mobile */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+.active-element {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+}
+
+.product-price {
+    font-size: 16px;
+}
+
+.size-buttons {
+    margin-top: 20px;
+}
+
+.size-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 8px 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.size-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    header {
+        padding-top: 20px; /* Adjust top padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
+    }
+
+    .logo img {
+        max-width: 100%; /* Ensure logo image doesn't overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    main {
+        padding: 20px; /* Adjust padding for better spacing on mobile */
+    }
+
+    .size-buttons {
+        margin-top: 10px; /* Adjust spacing for size buttons */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust footer padding */
+    }
+}
