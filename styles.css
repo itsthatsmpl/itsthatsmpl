@@ -12,7 +12,7 @@ header {
     height: 300px; /* Set the desired height */
     width: 100%; /* Set a fixed width */
     padding: 0px;
-    margin: -150px 0 0; /* Reset margin */
+    margin: 0; /* Reset margin */
     display: flex;
     justify-content: center; /* Center align horizontally */
 }
@@ -58,6 +58,11 @@ main {
     margin-top: 20px;
 }
 
+.size-buttons > a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
 .size-button {
     background-color: #ffffff;
     color: #000000;
@@ -83,6 +88,9 @@ footer {
 
 footer p {
     font-size: 12px;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    cursor: default; /* Set cursor to default */
 }
 
 /* Media query for mobile devices */
