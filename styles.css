@@ -1,6 +1,7 @@
 /* Default styles */
 body {
     margin: 0;
+    padding-top: 0;
     background-color: #ffffff; /* white background */
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden; /* Hide horizontal overflow */
@@ -11,13 +12,12 @@ header {
     background-color: #ffffff;
     height: auto; /* Set height to auto to accommodate content */
     width: 100%; /* Set a fixed width */
-    padding: 20px 0; /* Add padding top and bottom */
     margin: 0; /* Reset margin */
     display: flex;
     justify-content: center; /* Center align horizontally */
 }
 
-.logo{
+.logo {
     max-width: 50%; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
     display: flex;
@@ -25,61 +25,57 @@ header {
     align-items: center; /* Center align vertically */
 }
 
-main {
-    display: flex;
-    justify-content: center; /* Center align horizontally */
-    align-items: center; /* Center align vertically */
-    flex-grow: 1;
-    padding: 0px; /* Add padding for better spacing on mobile */
-}
-
 .content {
+    margin-top: -40px;
+    padding-bottom: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%; /* Ensure content doesn't overflow */
-}
-
-.active-element {
-    display: block;
-    margin-bottom: 0px;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .product-info {
     text-align: center;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .product-name {
     font-size: 18px;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .product-price {
     font-size: 16px;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .size-buttons {
     margin-top: 20px;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .size-buttons a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .size-button {
     background-color: #ffffff;
     color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     padding: 8px 14px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 1px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .size-button:hover {
     background-color: #000000;
     color: #ffffff;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 footer {
@@ -87,6 +83,7 @@ footer {
     padding: 20px 0;
     display: flex;
     justify-content: center; /* Space elements evenly */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 footer p {
@@ -112,10 +109,12 @@ footer p {
 
     main {
         padding: 20px; /* Adjust padding for better spacing on mobile */
+        overflow-x: hidden; /* Hide horizontal overflow */
     }
 
     .size-buttons {
         margin-top: 10px; /* Adjust spacing for size buttons */
+        overflow-x: hidden; /* Hide horizontal overflow */
     }
 
     footer {
