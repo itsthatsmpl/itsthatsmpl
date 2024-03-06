@@ -1,25 +1,28 @@
 /* Default styles */
 body {
     margin: 0;
-    padding: 0;
     background-color: #ffffff; /* white background */
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden; /* Hide horizontal overflow */
+    justify-content: center; /* Center align horizontally */
 }
 
 header {
     background-color: #ffffff;
-    height: 300px; /* Set the desired height */
+    height: auto; /* Set height to auto to accommodate content */
     width: 100%; /* Set a fixed width */
-    padding: 0px;
+    padding: 20px 0; /* Add padding top and bottom */
     margin: 0; /* Reset margin */
     display: flex;
     justify-content: center; /* Center align horizontally */
 }
 
-.logo img {
-    width: 80%; /* Set the logo width as a percentage of the header width */
+.logo{
+    max-width: 50%; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
 }
 
 main {
